@@ -1,0 +1,17 @@
+node_modules/
+.env
+
+# copyrighted artist photos & song covers
+public/images/arjitsingh.jpg
+public/images/atifaslam.jpg
+public/images/edsheeran.jpg
+public/images/ImagineDragons.jpg
+public/images/Theweeknd.jpg
+public/images/believer.jpg
+public/images/heeriye.jpg
+public/images/kesariya.jpg
+public/images/pasoori.jpg
+public/images/shapeofyou.jpg
+
+# song files
+public/songs/

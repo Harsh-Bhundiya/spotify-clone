@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Playlist</title>
+    <link rel="stylesheet" href="addplaylist.css">
+</head>
+<body>
+
+    <div id="addplaylistpage">
+        <div id="addplaylistcard">
+            <h1>Create New Playlist</h1>
+            <p id="subtext">Give your playlist a name to get started</p>
+
+            <form id="createplaylistform">
+                <input
+                    type="text"
+                    id="playlisttitle"
+                    placeholder="e.g. Chill Vibes"
+                    required
+                    autofocus
+                >
+                <div id="btnrow">
+                    <button type="button" id="cancelbtn">Cancel</button>
+                    <button type="submit" id="createbtn">Create</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="addplaylist.js"></script>
+</body>
+</html>

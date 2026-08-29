@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+<body>
+
+<div class="container">
+
+    <% for(let i=0;i<songs.length;i++) { %>
+
+        <div class="card" data-audio="<%= songs[i].previewUrl %>">
+            <img src="<%= songs[i].artworkUrl100 %>" alt="" data-img="<%= songs[i].artworkUrl100 %>">
+
+            <h3><%= songs[i].trackName %></h3>
+
+            <p><%= songs[i].artistName %></p>
+
+            <img class="playbutton" src="/images/play.png" alt="">
+
+            <button class="addsong">add to playlist</button>
+        </div>
+
+    <% } %>
+    <div id="searchpage" data-playlistid="<%= playlist %>">
+        
+    </div>
+
+    <section id="footer2">
+    <input type="range" name="seekbar" id="seekbar">
+        
+    <div id="container_x">
+        
+            <button id="revind">⏪</button>
+            <button id="pause">⏸️</button>
+            <button id="forward">⏩</button>
+        </div>
+    </section>
+
+    <script src="/app.js"></script>
+
+</div>
+
+</body>
